@@ -16,7 +16,7 @@ function decimalToBinary(decimalNum) {
 }
 
 // Prompt the user for input
-const input = prompt('Enter a decimal number:');
+const input = prompt();
 
 // Parse the input as a decimal number
 const decimalNumber = parseInt(input, 10);
@@ -25,4 +25,4 @@ const decimalNumber = parseInt(input, 10);
 const binaryNumber = decimalToBinary(decimalNumber);
 
 // Output the result
-console.log('Binary representation:', binaryNumber);
+console.log(binaryNumber);
