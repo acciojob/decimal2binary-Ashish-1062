@@ -1,6 +1,28 @@
-function threeSum(arr, target) {
-// write your code here
-  
+function decimalToBinary(decimalNum) {
+  let binaryNum = '';
+
+  // Handling the case when the input is 0
+  if (decimalNum === 0) {
+    binaryNum = '0';
+  }
+
+  // Converting decimal to binary
+  while (decimalNum > 0) {
+    binaryNum = (decimalNum % 2) + binaryNum;
+    decimalNum = Math.floor(decimalNum / 2);
+  }
+
+  return binaryNum;
 }
 
-module.exports = threeSum;
+// Prompt the user for input
+const input = prompt('Enter a decimal number:');
+
+// Parse the input as a decimal number
+const decimalNumber = parseInt(input, 10);
+
+// Convert the decimal number to binary
+const binaryNumber = decimalToBinary(decimalNumber);
+
+// Output the result
+console.log('Binary representation:', binaryNumber);
