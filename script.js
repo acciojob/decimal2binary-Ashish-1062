@@ -14,15 +14,3 @@ function decimalToBinary(decimalNum) {
 
   return binaryNum;
 }
-
-// Prompt the user for input
-const input = prompt();
-
-// Parse the input as a decimal number
-const decimalNumber = parseInt(input, 10);
-
-// Convert the decimal number to binary
-const binaryNumber = decimalToBinary(decimalNumber);
-
-// Output the result
-console.log(binaryNumber);
