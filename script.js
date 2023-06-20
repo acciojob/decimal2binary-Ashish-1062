@@ -14,3 +14,5 @@ function decimalToBinary(decimalNum) {
 
   return binaryNum;
 }
+
+decimalToBinary(decimalNum)
