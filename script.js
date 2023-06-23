@@ -6,13 +6,8 @@ function decimalToBinary(decimalNum) {
     binaryNum = '0';
   }
 
-  // Converting decimal to binary
-  while (decimalNum > 0) {
-    binaryNum = (decimalNum % 2) + binaryNum;
-    decimalNum = Math.floor(decimalNum / 2);
-  }
-
-  return binaryNum;
+ 
+let ans=Number(decimalNum).toString(2)
+  return ans;
 }
 
-module.exports = decimalToBinary;
